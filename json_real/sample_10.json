@@ -1,0 +1,197 @@
+{
+    "loan": {
+        "loanSummary": {
+            "tradeId": "TEST",
+            "operationDate": "2021-04-15",
+            "dateBegin": "2021-04-13",
+            "maturityDate": "2032-04-13"
+        },
+        "paymentsSchedule": [
+            {
+                "paymentDate": "2021-04-13",
+                "expectedAmount": 100000000,
+                "actualAmount": 0,
+                "paymentType": "draw",
+                "executionStatus": "executed"
+            },
+            {
+                "paymentDate": "2021-06-03",
+                "expectedAmount": 10000000,
+                "actualAmount": 0,
+                "paymentType": "notionalRepayment",
+                "executionStatus": "notExecuted"
+            },
+            {
+                "paymentDate": "2021-06-09",
+                "expectedAmount": 10000000,
+                "actualAmount": 0,
+                "paymentType": "notionalRepayment",
+                "executionStatus": "notExecuted"
+            },
+            {
+                "paymentDate": "2021-07-02",
+                "expectedAmount": 10000000,
+                "actualAmount": 0,
+                "paymentType": "notionalRepayment",
+                "executionStatus": "notExecuted"
+            },
+            {
+                "paymentDate": "2021-08-31",
+                "expectedAmount": 10000000,
+                "actualAmount": 0,
+                "paymentType": "notionalRepayment",
+                "executionStatus": "notExecuted"
+            },
+            {
+                "paymentDate": "2021-11-29",
+                "expectedAmount": 10000000,
+                "actualAmount": 0,
+                "paymentType": "notionalRepayment",
+                "executionStatus": "notExecuted"
+            },
+            {
+                "paymentDate": "2022-05-28",
+                "expectedAmount": 10000000,
+                "actualAmount": 0,
+                "paymentType": "notionalRepayment",
+                "executionStatus": "notExecuted"
+            },
+            {
+                "paymentDate": "2023-05-23",
+                "expectedAmount": 10000000,
+                "actualAmount": 0,
+                "paymentType": "notionalRepayment",
+                "executionStatus": "notExecuted"
+            },
+            {
+                "paymentDate": "2026-05-07",
+                "expectedAmount": 10000000,
+                "actualAmount": 0,
+                "paymentType": "notionalRepayment",
+                "executionStatus": "notExecuted"
+            },
+            {
+                "paymentDate": "2031-04-11",
+                "expectedAmount": 10000000,
+                "actualAmount": 0,
+                "paymentType": "notionalRepayment",
+                "executionStatus": "notExecuted"
+            },
+            {
+                "paymentDate": "2041-02-17",
+                "expectedAmount": 10000000,
+                "actualAmount": 0,
+                "paymentType": "notionalRepayment",
+                "executionStatus": "notExecuted"
+            }
+        ],
+        "factPayments": [
+            {
+                "paymentDate": "2021-04-13",
+                "actualAmount": 100000000,
+                "paymentType": "draw"
+            }
+	],
+        "prepaymentPenalties": [
+            {
+                "startDate": "2014-07-31",
+                "type": "\u043f\u0440\u043e\u0446\u0435\u043d\u0442_\u043e\u0442_\u0441\u0443\u043c\u043c\u044b_\u0434\u043e\u0441\u0440\u043e\u0447\u043d\u043e_\u0432\u043e\u0437\u0432\u0440\u0430\u0449\u0430\u0435\u043c\u043e\u0433\u043e_\u0434\u043e\u043b\u0433\u0430",
+                "value": 100000000
+            }
+        ],
+        "interestPayments": [
+            {
+                "startDate": "2021-04-13",
+                "endDate": "2022-04-13",
+                "paymentDate": "2022-04-13",
+                "paymentType": "interestPayment",
+                "accrualType": "simple",
+                "accrualBase": "notionalAndCapitalized",
+                "actualAmount": 0,
+                "executionStatus": "notExecuted"
+            }
+        ],
+        "interestSchema": [
+            {
+                "inclusiveBeginDate": "2021-04-13",
+                "bankYear": "ACT",
+                "bankMonth": "ACT",
+                "type": "fixed",
+                "fixedSchema": 0.0
+            }
+        ]
+    },
+    "options": {
+        "algorithm": "full",
+        "lgd": 1.0,
+        "asOfDate": "2021-04-15",
+        "deltaTInDays": 10,
+        "irOptions": {
+            "alpha": 0.02,
+            "sigma": 0.0166,
+            "curve": {
+                "date": "2021-04-15",
+                "points": [
+                    {
+                        "date": "2021-04-16",
+                        "value": 1.0
+                    },
+                    {
+                        "date": "2021-04-20",
+                        "value": 1.0
+                    },
+                    {
+                        "date": "2021-05-13",
+                        "value": 1.0
+                    },
+                    {
+                        "date": "2021-07-12",
+                        "value": 1.0
+                    },
+                    {
+                        "date": "2021-10-10",
+                        "value": 1.0
+                    },
+                    {
+                        "date": "2022-04-08",
+                        "value": 1.0
+                    },
+                    {
+                        "date": "2023-04-03",
+                        "value": 1.0
+                    },
+                    {
+                        "date": "2026-03-18",
+                        "value": 1.0
+                    },
+                    {
+                        "date": "2031-02-20",
+                        "value": 1.0
+                    },
+                    {
+                        "date": "2040-12-29",
+                        "value": 1.0
+                    }
+                ]
+            }
+        },
+        "hzOptions": {
+            "alpha": 0.8,
+            "sigma": 1.06,
+            "curve": {
+                "date": "2021-04-13",
+                "points": [
+                    {
+                        "date": "2021-04-13",
+                        "value": 1.0
+                    },
+                    {
+                        "date": "2021-10-13",
+                        "value": 1.0
+                    }
+                ]
+            }
+        }
+    },
+    "marketContainer": {}
+}

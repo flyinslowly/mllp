@@ -1,0 +1,6 @@
+json_augmented/
+json_real_patterns/
+.idea/
+**/.ipynb_checkpoints/
+**/__pycache__
+/venv/
